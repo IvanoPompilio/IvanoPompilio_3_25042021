@@ -31,6 +31,7 @@ header .fas {
 
 header h1 {
   font-family: Shrikhand, sans-serif;
+  font-size: 30px;
   color: black;
   margin: 0;
 }
@@ -211,5 +212,35 @@ header h1 {
 
 .restaurants__box__des--heading {
   font-size: small;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+}
+
+footer .logo2 h2 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+footer nav ul {
+  padding: 0;
+}
+
+footer nav ul li {
+  list-style-type: none;
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+footer nav ul li i {
+  padding-right: 10px;
+}
+
+footer nav ul li .fa-hands-helping {
+  padding: 2px;
 }
 /*# sourceMappingURL=style.css.map */

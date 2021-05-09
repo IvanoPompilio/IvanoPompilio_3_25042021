@@ -1,0 +1,91 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-bck: #F6F6F6;
+$color-font: #353535;
+$gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+
+@mixin shadow {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+@mixin centerflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin logo {
+    font-family: Shrikhand, sans-serif;
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
+
+@mixin btn {
+    opacity: 1;
+    margin: 16px 0px;
+    background: $gradient;
+    color: white;
+    padding: 20px;
+    border-radius: 200px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+
+* a {
+    text-decoration: none;
+    color: white
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    @include centerflex();
+    position: relative;
+    height: 62px;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    .fas {
+        display: none;
+    }
+    h1 {
+        @include logo();
+    }
+}
+
+
+
+footer {
+    background-color: #353535;
+    padding:20px;
+
+    .logo2 h2{
+        font-family: Shrikhand, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    nav ul {
+        padding: 0;
+    
+        li {
+            list-style-type: none;
+            color: white;
+            font-size: 14px;
+            margin: 5px 0;
+
+            i {
+                padding-right: 10px;
+            }
+
+            .fa-hands-helping {
+                padding: 2px;
+            }
+        }
+    }
+}

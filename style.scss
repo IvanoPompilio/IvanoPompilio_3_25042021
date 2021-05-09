@@ -175,10 +175,16 @@ header {
             }
             &--coeur {
                 padding:0 15px;
-                height: 25px;
-                color: white;
-            }
+                font-size: 25px;
+                color: black;
+                transition: 0.5ms;
             
+                :hover {
+                        content: "i class="fas fa-heart"";
+                        transition: 0.5ms;
+                        color: red;
+                    }
+            }
         }
 
     }

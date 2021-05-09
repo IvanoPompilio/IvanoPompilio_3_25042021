@@ -224,8 +224,17 @@ header h1 {
 
 .restaurants__box__des--coeur {
   padding: 0 15px;
-  height: 25px;
-  color: white;
+  font-size: 25px;
+  color: black;
+  -webkit-transition: 0.5ms;
+  transition: 0.5ms;
+}
+
+.restaurants__box__des--coeur :hover {
+  content: "i class=" fas fa-heart "";
+  -webkit-transition: 0.5ms;
+  transition: 0.5ms;
+  color: red;
 }
 
 footer {

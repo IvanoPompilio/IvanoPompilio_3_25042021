@@ -1,0 +1,69 @@
+* a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 62px;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .fas {
+  display: none;
+}
+
+header h1 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 30px;
+  color: black;
+  margin: 0;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+}
+
+footer .logo2 h2 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+footer nav ul {
+  padding: 0;
+}
+
+footer nav ul li {
+  list-style-type: none;
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+footer nav ul li i {
+  padding-right: 10px;
+}
+
+footer nav ul li .fa-hands-helping {
+  padding: 2px;
+}
+/*# sourceMappingURL=style-resto.css.map */

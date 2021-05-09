@@ -45,18 +45,50 @@ body {
 
 header {
     @include centerflex();
-    position: relative;
     height: 62px;
     width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    .fas {
-        display: none;
+    i {
+        position: absolute;
+        top: 22px;
+        left: 20px;
+        color: black;
+        font-size: 20px;
     }
     h1 {
         @include logo();
     }
 }
 
+.cover{
+    position: relative;
+    &__image {
+        background: rgba(255, 255, 255, 0.2);
+        &__pic {
+            object-fit: cover;
+            height: 255px;
+            width: 100%;
+        }
+    }
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        position: absolute;
+        bottom: 0;
+        background-color: $color-bck;
+        width: 100%;
+        padding: 0 14px;
+        border-radius: 30px 30px 0 0;
+    }
+
+}
+
+#menu {
+    background-color: $color-bck;
+    margin: 0;
+    padding: 0 14px;
+}
 
 
 footer {

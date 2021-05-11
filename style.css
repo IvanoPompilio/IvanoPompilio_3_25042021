@@ -202,6 +202,8 @@ header h1 {
 
 .restaurants__box__des {
   position: absolute;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,19 +228,36 @@ header h1 {
   font-size: 16px;
 }
 
-.restaurants__box__des--coeur {
-  padding: 0 15px;
-  font-size: 25px;
-  color: black;
-  -webkit-transition: 0.5ms;
-  transition: 0.5ms;
+.restaurants__box__des__coeur {
+  position: relative;
+  /*
+                color: black;
+                font-size: 22px;
+                padding:0 15px;
+                transition: 0.5ms;*/
 }
 
-.restaurants__box__des--coeur :hover {
-  content: "i class=" fas fa-heart "";
-  -webkit-transition: 0.5ms;
-  transition: 0.5ms;
-  color: red;
+.restaurants__box__des__coeur--vide {
+  width: 22px;
+  position: absolute;
+  bottom: -8px;
+  right: 15px;
+}
+
+.restaurants__box__des__coeur--plein {
+  opacity: 0;
+  width: 22px;
+  position: absolute;
+  bottom: -8px;
+  right: 15px;
+}
+
+.restaurants__box__des__coeur--plein :hover {
+  opacity: 1;
+}
+
+.restaurants__box__des__coeur--plein:hover {
+  display: none;
 }
 
 /*footer*/

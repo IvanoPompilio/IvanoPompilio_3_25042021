@@ -90,11 +90,27 @@ header h1 {
   margin: 0;
 }
 
-.cover__heading--coeur {
-  padding: 0 14px;
-  font-size: 25px;
-  color: black;
-  padding: 35px 35px 0 35px;
+.cover__heading__coeur {
+  position: relative;
+}
+
+.cover__heading__coeur--vide {
+  width: 22px;
+  position: absolute;
+  bottom: -8px;
+  right: 15px;
+}
+
+.cover__heading__coeur--plein {
+  opacity: 0;
+  width: 22px;
+  position: absolute;
+  bottom: -8px;
+  right: 15px;
+}
+
+.cover__heading__coeur--plein :hover {
+  opacity: 1;
 }
 
 /*menu section*/

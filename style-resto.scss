@@ -93,11 +93,24 @@ header {
             padding: 35px 14px 0 20px;
             @include logo();
         }
-        &--coeur {
-            padding: 0 14px;
-            font-size: 25px;
-            color: black;
-            padding: 35px 35px 0 35px;
+        &__coeur {
+            position: relative;
+                &--vide {
+                    width: 22px;
+                    position: absolute;
+                    bottom: -8px;
+                    right: 15px;
+                }
+                &--plein {
+                    opacity: 0;
+                    width: 22px;
+                    position: absolute;
+                    bottom: -8px;
+                    right: 15px;
+                    :hover {
+                        opacity: 1;
+                    }
+                }
         }
     }
 
@@ -160,7 +173,6 @@ header {
         }
     }
 }
-
 
 footer {
     background-color: #353535;

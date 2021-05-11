@@ -166,6 +166,8 @@ header {
         }
         &__des {
             position: absolute;
+            background-color: white;
+            border-radius: 0 0 15px 15px;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -181,21 +183,37 @@ header {
                     font-size: 16px;
                 }
             }
-            &--coeur {
-                padding:0 15px;
-                font-size: 25px;
+            &__coeur {
+                position: relative;
+                /*
                 color: black;
-                transition: 0.5ms;
-            
-                :hover {
-                        content: "i class="fas fa-heart"";
-                        transition: 0.5ms;
-                        color: red;
+                font-size: 22px;
+                padding:0 15px;
+                transition: 0.5ms;*/
+                &--vide {
+                    width: 22px;
+                    position: absolute;
+                    bottom: -8px;
+                    right: 15px;
+                }
+                &--plein {
+                    opacity: 0;
+                    width: 22px;
+                    position: absolute;
+                    bottom: -8px;
+                    right: 15px;
+                    :hover {
+                        opacity: 1;
                     }
+                }
             }
         }
 
     }
+}
+
+.restaurants__box__des__coeur--plein:hover {
+    display: none;
 }
 
 /*footer*/

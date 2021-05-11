@@ -98,15 +98,15 @@ header {
                 &--vide {
                     width: 22px;
                     position: absolute;
-                    bottom: -8px;
-                    right: 15px;
+                    bottom: -26px;
+                    right: 32px;
                 }
                 &--plein {
                     opacity: 0;
                     width: 22px;
                     position: absolute;
-                    bottom: -8px;
-                    right: 15px;
+                    bottom: -26px;
+                    right: 32px;
                     :hover {
                         opacity: 1;
                     }
@@ -159,7 +159,20 @@ header {
         border-radius: 15px;
         margin: 6px 0;
         padding: 15px 10px;
+        cursor: pointer;
+        overflow: hidden;
         @include shadow();
+        animation: opacity 1s both;
+        position: relative;
+        &:hover .selector {
+            @include centerflex();
+            animation: slide-left 0.5s ease ;
+            transform-origin: right;
+        }
+        &:hover .dish__type__prix {
+            padding-right: 70px;
+            transition: 0.5s ease ;
+        }
         &__prix {
             display: flex;
             justify-content: space-between;
@@ -169,10 +182,94 @@ header {
                 font-weight: bold;
                 color: #353535;
             }
-
         }
     }
 }
+
+.selector {
+    display: none;              
+    position: absolute;
+    background: $color-tertiary;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    top: 0px;
+    padding: 0 13px;
+    height: 100%;
+    i {
+        font-size: 30px;
+        color: white;
+        transform: rotate(180deg);
+        animation: rotate 0.5s both;
+    }
+}
+
+/*animation delay*/
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+}
+100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+              transform: scaleX(0);
+    }
+    100% {
+              transform: scaleX(-50px);
+    }
+}
+
+@keyframes opacity {
+    0% {
+              opacity: 0;
+    }
+    100% {
+              opacity: 1;
+    }
+}
+
+
+#an1{
+    animation-delay: 0.1s;
+}
+
+#an2{
+    animation-delay: 0.2s;
+}
+
+#an3{
+    animation-delay: 0.3s;
+}
+
+#an4{
+    animation-delay: 0.4s;
+}
+
+#an5{
+    animation-delay: 0.5s;
+}
+
+#an6{
+    animation-delay: 0.6s;
+}
+
+#an7{
+    animation-delay: 0.7s;
+}
+
+#an8{
+    animation-delay: 0.8s;
+}
+
+#an9{
+    animation-delay: 0.9s;
+}
+
+/*footer*/
 
 footer {
     background-color: #353535;

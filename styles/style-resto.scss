@@ -326,3 +326,53 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .dish {
+        width: 32%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo2 {
+            margin-right: 40px;
+            h2 {
+                font-size: 26px;
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                justify-content: flex-start;
+                li {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1025px) {
+    .cover__heading {
+        padding: 0 4%;
+        border-radius: 100px 100px 0 0;
+    }
+
+    .menu-container {
+    padding: 0 8%;
+    }
+
+    footer {
+        padding: 20px 12%;
+    }
+}

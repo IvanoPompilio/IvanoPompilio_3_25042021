@@ -480,6 +480,9 @@ footer nav ul li .fa-hands-helping {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -505,13 +508,13 @@ footer nav ul li .fa-hands-helping {
 
 @media screen and (min-width: 1025px) {
   #filter {
-    padding: 30px 10%;
+    padding: 30px 12%;
   }
   .restaurants {
-    padding: 30px 10%;
+    padding: 30px 12%;
   }
   footer {
-    padding: 20px 10%;
+    padding: 20px 12%;
   }
 }
 /*# sourceMappingURL=style.css.map */

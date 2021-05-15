@@ -384,6 +384,7 @@ footer {
 
     footer {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         .logo2 {
             margin-right: 40px;
@@ -402,19 +403,19 @@ footer {
         }
     }
 
-    
+
 }
 
 @media screen and (min-width: 1025px) {
     #filter {
-        padding: 30px 10%;
+        padding: 30px 12%;
     }
 
     .restaurants {
-        padding: 30px 10%;
+        padding: 30px 12%;
     }
 
     footer {
-        padding: 20px 10%;
+        padding: 20px 12%;
     }
 }

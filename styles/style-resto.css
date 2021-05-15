@@ -409,4 +409,59 @@ footer nav ul li i {
 footer nav ul li .fa-hands-helping {
   padding: 2px;
 }
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dish {
+    width: 32%;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .logo2 {
+    margin-right: 40px;
+  }
+  footer .logo2 h2 {
+    font-size: 26px;
+  }
+  footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer nav ul li {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .cover__heading {
+    padding: 0 4%;
+    border-radius: 100px 100px 0 0;
+  }
+  .menu-container {
+    padding: 0 8%;
+  }
+  footer {
+    padding: 20px 12%;
+  }
+}
 /*# sourceMappingURL=style-resto.css.map */

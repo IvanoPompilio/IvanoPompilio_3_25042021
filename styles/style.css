@@ -262,6 +262,7 @@ header h1 {
 }
 
 .filter-choose__box:hover {
+  cursor: pointer;
   background-color: #F5EDFF;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
@@ -337,11 +338,26 @@ header h1 {
 }
 
 .restaurants__box__image {
+  position: relative;
   height: 175px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+
+.restaurants__box__new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  margin: 0;
+  padding: 8px 10px;
+  color: #008766;
+  background: #99E2D0;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .restaurants__box__des {

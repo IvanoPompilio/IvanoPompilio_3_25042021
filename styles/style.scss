@@ -213,6 +213,7 @@ header {
         background-color: $color-bck;
         transition: 00.5s;
         &:hover {
+            cursor: pointer;
             background-color: #F5EDFF;
             @include shadow-hover();
             i {
@@ -255,7 +256,6 @@ header {
     }
     &__box {
         position: relative;
-        
         height: 250px;
         @include shadow();
         border-radius: 15px;
@@ -267,10 +267,24 @@ header {
             @include shadow-hover();
         }
         &__image {
+            position: relative;
             height: 175px;
             width: 100%;
             object-fit: cover;
             border-radius: 15px 15px 0 0;
+        }
+        &__new{
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 2;
+        margin: 0;
+        padding: 8px 10px;
+        color: #008766;
+        background: $color-tertiary;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 500;
         }
         &__des {
             position: absolute;

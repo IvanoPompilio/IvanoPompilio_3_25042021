@@ -45,6 +45,15 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6); 
 }
 
+@mixin gradient-heart {
+    background: -webkit-linear-gradient(180deg,#9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px;
+    -webkit-text-fill-color: none;
+    transition: 00.5ms;
+}
+
 * a {
     text-decoration: none;
     color: white
@@ -314,9 +323,7 @@ header {
                 cursor: pointer;;
                 transition: 0.5ms;
                 &:hover {
-                -webkit-text-fill-color: $color-secondary;
-                -webkit-text-stroke: 0px;
-                -webkit-text-fill-color: $gradient;
+                @include gradient-heart();
                 }
             }
         }
@@ -379,7 +386,6 @@ footer {
 
     .restaurants {
         &__container {
-            flex-direction: none;
             justify-content: space-between;
             flex-wrap: wrap;
         }

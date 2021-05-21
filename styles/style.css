@@ -400,9 +400,13 @@ header h1 {
 }
 
 .restaurants__box__des__coeur:hover {
-  -webkit-text-fill-color: #FF79DA;
+  background: -webkit-linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
-  -webkit-text-fill-color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-text-fill-color: none;
+  -webkit-transition: 00.5ms;
+  transition: 00.5ms;
 }
 
 /*footer*/
@@ -467,10 +471,6 @@ footer nav ul li .fa-hands-helping {
     max-width: 31%;
   }
   .restaurants__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: none;
-            flex-direction: none;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

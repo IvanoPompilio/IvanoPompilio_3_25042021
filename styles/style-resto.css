@@ -103,19 +103,13 @@ header h1 {
 }
 
 .cover__heading__coeur:hover {
-  -webkit-text-fill-color: #FF79DA;
+  background: -webkit-linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
   -webkit-text-fill-color: none;
   -webkit-transition: 00.5ms;
   transition: 00.5ms;
-}
-
-.cover__heading__coeur i.fas.fa-heart {
-  width: 22px;
-  stroke-width: 22;
-  stroke: black;
-  fill: white;
-  cursor: pointer;
 }
 
 /*menu section*/

@@ -341,10 +341,10 @@ footer {
         font-size: 18px;
         font-weight: 400;
         margin: 0;
+        padding-right: 5px;
         transition: 0.5s;
         &:hover {
-            color: rgb(156, 156, 156);
-            transition: .5s;
+            @include gradient-heart();
         }
     }
     nav ul {

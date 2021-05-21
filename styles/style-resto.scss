@@ -243,7 +243,7 @@ header {
               transform: scaleX(0);
     }
     100% {
-              transform: scaleX(-50px);
+              transform: scaleX(1);
     }
 }
 
@@ -304,6 +304,9 @@ footer {
         font-size: 18px;
         font-weight: 400;
         margin: 0;
+        &:hover {
+            @include gradient-heart();
+        }
     }
 
     nav ul {

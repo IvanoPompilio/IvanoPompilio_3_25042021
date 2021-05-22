@@ -21,7 +21,7 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
 }
 
 @mixin logo {
-    font-family: Shrikhand, sans-serif;
+    font-family: 'Shrikhand', 'sans-serif';
     font-size: 30px;
     color: black;
     margin: 0;
@@ -64,48 +64,55 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.spinner {
-    display: none;
-
+.spinner{
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
+    background: #f6f6f6b9;
     z-index: 20;
     overflow: hidden;
-    animation: animate 3s linear;
-    &__loader {
-        @include centerflex();
-        position: relative;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
-        animation: animate 3s linear;
-        overflow: hidden;
-        span {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: $gradient;
-            overflow: hidden;
-            &:after {
-                content: '';
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                right: 10px;
-                bottom: 10px;
-                background: #f1f1f1;
-                border: solid white 3px;
-                border-radius: 50%;
-                overflow: hidden;
-            }
-        }
-    }
-}
 
-@keyframes animate {
+    &__loader{
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      border: 3px solid transparent;
+      border-top-color: $color-secondary;
+      top: 50%;
+      left: 50%;
+      margin: -40px;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+      
+      &:before, &:after{
+        content:'';
+        position: absolute;
+        border: 3px solid transparent;
+        border-radius: 50%;
+      }
+      
+      &:before{
+        border-top-color: $color-primary;
+        top: -18px;
+        left: -18px;
+        right: -18px;
+        bottom: -18px;
+        animation: spin 1.5s linear infinite;
+      }
+      
+      &:after{
+        border-top-color:$color-tertiary;
+        top: 9px;
+        left: 9px;
+        right: 9px;
+        bottom: 9px;  
+        animation: spin 2.5s linear infinite;
+      }
+    }
+  }
+
+@keyframes spin {
     0% {
         transform: rotate(0deg);
     }
@@ -114,34 +121,6 @@ body {
     }
 }
 
-
-.loader span:nth-child(1) {
-    filter: blur(5px);
-}
-
-.loader span:nth-child(2) {
-    filter: blur(10px);
-}
-
-.loader span:nth-child(3) {
-    filter: blur(25px);
-}
-
-.loader span:nth-child(4) {
-    filter: blur(50px);
-}
-
-.loader:after {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: #f1f1f1;
-    border: solid white 10px;
-    border-radius: 50%;
-}
 
 /*header*/
 

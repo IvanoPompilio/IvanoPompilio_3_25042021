@@ -83,7 +83,8 @@ header h1 {
 }
 
 .cover__heading h2 {
-  padding: 35px 14px 0 20px;
+  font-size: 28px !important;
+  padding: 35px 0 0 20px;
   font-family: Shrikhand, sans-serif;
   font-size: 30px;
   color: black;

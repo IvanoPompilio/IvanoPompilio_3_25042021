@@ -15,7 +15,9 @@ body {
   position: fixed;
   background: #f6f6f6b9;
   z-index: 20;
-  overflow: hidden;
+  -webkit-animation: fading 2.5s;
+          animation: fading 2.5s;
+  visibility: hidden;
 }
 
 .spinner__loader {
@@ -45,8 +47,8 @@ body {
   left: -18px;
   right: -18px;
   bottom: -18px;
-  -webkit-animation: spin 1.5s linear infinite;
-          animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 .spinner__loader:after {
@@ -55,8 +57,8 @@ body {
   left: 9px;
   right: 9px;
   bottom: 9px;
-  -webkit-animation: spin 2.5s linear infinite;
-          animation: spin 2.5s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -78,6 +80,34 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fading {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fading {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 

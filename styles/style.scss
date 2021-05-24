@@ -64,6 +64,8 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+// Loading spinner // 
+
 .spinner{
     position: relative;
     width: 100%;
@@ -71,7 +73,8 @@ body {
     position: fixed;
     background: #f6f6f6b9;
     z-index: 20;
-    overflow: hidden;
+    animation: fading 2.5s;
+    visibility: hidden;
 
     &__loader{
       position: absolute;
@@ -98,7 +101,7 @@ body {
         left: -18px;
         right: -18px;
         bottom: -18px;
-        animation: spin 1.5s linear infinite;
+        animation: spin 2s linear infinite;
       }
       
       &:after{
@@ -107,7 +110,7 @@ body {
         left: 9px;
         right: 9px;
         bottom: 9px;  
-        animation: spin 2.5s linear infinite;
+        animation: spin 2s linear infinite;
       }
     }
   }
@@ -121,6 +124,19 @@ body {
     }
 }
 
+@keyframes fading {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
 /*header*/
 

@@ -395,6 +395,7 @@ header h1 {
 
 .restaurants__box__des__coeur:hover {
   background: -webkit-linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
@@ -421,6 +422,7 @@ footer .logo2 h2 {
 
 footer .logo2 h2:hover {
   background: -webkit-linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
